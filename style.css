@@ -316,7 +316,11 @@ img{
 
 
 .testimonial{
-    background: #f7f7f7;
+    background: #111;
+}
+
+.testimonial .heading{
+    color: #fff;
 }
 
 .testimonial .content{
@@ -455,6 +459,13 @@ img{
     padding: 10px;
 }
 
+iframe{
+    width: 100%;
+    height: 600px;
+    padding: 50px;
+    border-radius: 60px;
+}
+
 
 /* responsive */
 
@@ -587,10 +598,18 @@ img{
     .testimonial .content .testimonialBx h3 {
         margin-top: 20px;
     }
+    iframe{
+        padding: 0;
+        height: 400px;
+        border-radius: 10px;
+    }
 }
 
 @media (max-width:600px){
     section {
         padding: 100px 15px;
+    }
+    iframe{
+        height: 300px;
     }
 }
