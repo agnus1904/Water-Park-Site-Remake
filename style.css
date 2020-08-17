@@ -176,8 +176,7 @@ header.sticky ul li a{
     font-weight: 600;
     font-size: 30px;
 }
-
-.content{
+.about .content{
     display: flex;
     justify-content: space-between;
 }
@@ -275,7 +274,7 @@ img{
     opacity: 1;
 }
   
-.container img{
+.work .container img{
     width: 100%;
     padding: 20px;
     border-radius: 35px;
@@ -289,7 +288,7 @@ img{
   }
   
   /* The expanding image container */
-  .container {
+  .work .container {
     position: relative;
     display: none;
   }
@@ -410,6 +409,125 @@ img{
     letter-spacing: 2px;
 }
 
+.aboutus .container{
+    position: relative;
+    height: 500px;
+    width: 400px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+    transition: 0.3s ease-out;
+}
+
+.aboutus .container:hover{
+    box-shadow: 0 1px 35px 0 rgba(0,0,0,0.3);
+}
+
+.aboutus{
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+.aboutus .container .image{
+    background: #000;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 2;
+    transition: transform 0.3s ease-out;
+}
+
+.aboutus .container:hover .image{
+    transform: translateY(-100px);
+}
+
+.aboutus .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease-out;
+}
+
+.aboutus .container:hover .image img{
+    opacity: 0.7;
+}
+
+.aboutus .container .content{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+}
+
+
+.aboutus .contentBx ul li{
+    list-style-type: none;
+}
+
+.aboutus .content .info{
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+    line-height: 26px;
+}
+
+.aboutus .content .info .h2{
+    font-size: 27px;
+    margin: 3px 0;
+}
+ 
+.aboutus .content .infor .span{
+    color: #1a1a1a;
+}
+
+.aboutus .container ul{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.aboutus .container ul li{
+    margin: 0 5px;
+}
+
+.aboutus .container ul li a{
+    display: block;
+    height: 50px;
+    width: 50px;
+    color: #000;
+    background: #fff;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 20px;
+    opacity: 0;
+    transform: translateY(200px);
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.aboutus .container:hover ul >li >a{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.aboutus .container:hover ul >li:nth-child(2) a{
+    transition-delay: 0.05s;
+}
+.aboutus .container:hover ul >li:nth-child(3) a{
+    transition-delay: 0.1s;
+}
+.aboutus .container:hover ul >li:nth-child(4) a{
+    transition-delay: 0.15s;
+}
+.aboutus .container:hover ul >li:nth-child(5) a{
+    transition-delay: 0.2s;
+}
+
 .contactInfo{
     min-width: 40%;
 }
@@ -441,6 +559,10 @@ img{
     color: #fff;
     flex-direction: column;
     font-weight: 300;
+}
+
+.contact .content{
+    display: flex;
 }
 
 .contactInfoBx .box .text h3{
