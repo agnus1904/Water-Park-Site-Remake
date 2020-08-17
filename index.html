@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjalika</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loader">
+        <div class="ring">
+
+        </div>
+    </div>
+    <header>
+        <a href="#home" class="logo">Sanjalika</a>
+        <div class="toggle" onclick="toggleMenu()">
+        </div>
+        <ul class="menu">
+            <li><a href="#about" onclick="toggleMenu()">Gallery</a></li>
+            <li><a href="#services" onclick="toggleMenu()">Food</a></li>
+            <li><a href="#work" onclick="toggleMenu()">Location</a></li>
+            <li><a href="#testimonial" onclick="toggleMenu()">About Us</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="home">
+        <div class="textBx">
+            <h2>
+                Wellcome to
+                <br>
+                <span>Sanjalika Water Park</span>
+            </h2>
+            <h3>
+                Great place to have fun with your family
+            </h3>
+            <a href="#about" class="btn">
+                Information
+            </a>
+        </div>
+        <video src="./videos/Pexels Videos 4513.mp4" muted loop autoplay></video>
+    </section>
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About Sanjalika</h2>
+        </div>
+        <div class="content">
+            <div class="contentBx w50">
+                <h3>
+                    A wonderfull water park
+                </h3>
+                <p>
+                    Based on millions of reviews on TripAdvisor, 
+                    Sanjalika ranked #1 best water park in India and #12 
+                    in the World!! This beautiful waterpark has premium water 
+                    rides, and over 50 attractions in total, including 9 
+                    Extreme & Thrill rides!!
+                <br>
+                <br>
+                    The Main Festival area in the massive WAVE POOL is 
+                    absolutely STUNNING!!
+                <br>
+                    You can dance from day into the night to the beats of DJs K with 
+                    hot dancers!!
+                </p>
+                <h3>
+                    Open time
+                </h3>
+                <p>
+                    WET ELECTRIC MUSIC FESTIVAL  have the entire waterpark 
+                    closed for the party from 3pm – 9pm, you can enjoy all 
+                    the fun rides the park has to offer during the party!!
+                </p>
+            </div>
+            <div class="w50">
+                <img src="./images/festival.png" class="img" alt="image">
+            </div>
+        </div>
+    </section>
+    
+    <section class="services" id="services">
+        <div class="heading white">
+            <h2>Our Services</h2>
+                <p>
+                    Includes a full range of entertainment and dining 
+                    areas throughout the park
+                </p>
+        </div>
+        <div class="content">
+            <div class="servicesBx">
+                <i class="fas fa-swimmer"></i>
+                <h2>Swimming Zone</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, 
+                    adipisicing elit. Quidem pariatur placeat amet 
+                </p>
+            </div>
+            <div class="servicesBx">
+                <i class="fas fa-gamepad"></i>
+                <h2>Aventure Game Zone</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, 
+                    adipisicing elit. Quidem pariatur placeat amet 
+                </p>
+            </div>
+            <div class="servicesBx">
+                <i class="fas fa-utensils"></i>
+                <h2>Food Zone</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, 
+                    adipisicing elit. Quidem pariatur placeat amet 
+                </p>
+            </div>
+            <div class="servicesBx">
+                <i class="fas fa-hotel"></i>
+                <h2>Rest Zone</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, 
+                    adipisicing elit. Quidem pariatur placeat amet 
+                </p>
+            </div>
+            <div class="servicesBx">
+                <i class="fas fa-fish"></i>
+                <h2>Aquarium</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, 
+                    adipisicing elit. Quidem pariatur placeat amet 
+                </p>
+            </div>
+            <div class="servicesBx">
+                <i class="fas fa-baby-carriage"></i>
+                <h2>Baby Play Zone</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, 
+                    adipisicing elit. Quidem pariatur placeat amet 
+                </p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="work" id="work">
+        <div class="heading">
+            <h2>Gallery</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+        </div>
+
+
+        <div class="row">
+            <div class="column">
+              <img src="./images/mermaid.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+              <img src="./images/Luxury resort.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="./images/mermaid_1.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+              <img src="./images/Floating.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="./images/mermaid_3.jpeg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+              <img src="./images/parking.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+             <img src="./images/mermaid_2.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+             <img src="./images/cananas.jpeg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+            </div>
+        </div>
+          
+        <div class="container" style="transition: 0.3s ease;">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <img id="expandedImg">
+            <div id="imgtext"></div>
+        </div>
+        <br><br><br><br>
+        <div class="heading">
+            <h2>Guild Map</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+        </div>
+        <div class="content">
+            <div class="guild">
+                <img src="./images/guildmap.jpg" alt="guildmap">
+            </div>
+            <div class="workBx">
+                <img src="./images/product1.jpg" alt="image">
+            </div>
+            <div class="workBx">
+                <img src="./images/product2.jpg" alt="image">
+            </div>
+            <div class="workBx">
+                <img src="./images/product3.jpg" alt="image">
+            </div>
+            <div class="workBx">
+                <img src="./images/product4.jpg" alt="image">
+            </div>
+        </div>
+        <div class="heading">
+            <a href="#" class="btn">View More</a>
+        </div>
+    </section>
+        
+    <section class="testimonial" id="testimonial">
+        <div class="heading">
+            <h2>Location</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+        </div>
+        <div class="content">
+            <div class="testimonialBx">
+                <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Ullam perferendis consequuntur illum ex sed facere officiis 
+                adipisci quod perspiciatis molestiae ad veniam doloremque beatae, 
+                porro ratione eligendi architecto tenetur aliquid.
+                </p>
+                <h3>
+                    Someone Famous
+                    <br>
+                    <span>Creative Designer</span>
+                </h3>
+            </div>
+            <div class="testimonialBx">
+                <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Ullam perferendis consequuntur illum ex sed facere officiis 
+                adipisci quod perspiciatis molestiae ad veniam doloremque beatae, 
+                porro ratione eligendi architecto tenetur aliquid.
+                </p>
+                <h3>
+                    Someone Famous
+                    <br>
+                    <span>Creative Designer</span>
+                </h3>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="heading white">
+            <h2>Contact Us</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+        </div>
+        <div class="content">
+            <div class="contactInfo">
+                <h3>Contact Info</h3>
+                <div class="contactInfoBx">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>590 CMTT </p>
+                            <p>District 3</p>
+                            <p>HCM City</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>0708619547</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="far fa-envelope"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>agnus1904@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="formBx">
+                <form action="" onsubmit="sendFeedBack()">
+                    <h3>Message Me</h3>
+                    <input type="text" placeholder="Full name">
+                    <input type="email" placeholder="Email" >
+                    <textarea name="" id="" placeholder="Your Massage"></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="copyright">
+        <p>copyright &#174; by khoa</p>
+    </div>
+<script src="./script.js"></script>
+</body>
+</html>
