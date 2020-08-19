@@ -5,8 +5,8 @@ const loader = document.querySelector(".loader");
                 loader.style.opacity = "0";
                 setTimeout(function(){
                     loader.style.display = "none";
-                },0);
-            },0);
+                },500);
+            },1500);
         };
 
         window.addEventListener("scroll", function(){
@@ -25,11 +25,36 @@ const loader = document.querySelector(".loader");
         }
 
         function myFunction(imgs) {
+            var divExpandImg = document.getElementById("divimg");
             var expandImg = document.getElementById("expandedImg");
             var imgText = document.getElementById("imgtext");
             expandImg.src = imgs.src;
             imgText.innerHTML = imgs.alt;
-            expandImg.parentElement.style.display = "block";
+            divExpandImg.parentElement.style.display = "block";
+        }
+
+        function showImg(){
+            var i;
+            var img = document.querySelectorAll(".imgremove");
+            var btn = document.getElementById("gallerybtn");
+            for(i=0; i<img.length; i++){
+                if(img[i].style.display === "none"){
+                    img[i].style.display = "block";
+                    btn.innerHTML = "Show Less"
+                }
+                else{
+                    img[i].style.display = "none";
+                    btn.innerHTML = "Show more"
+                }
+            }
+        }
+
+        function showBooking(){
+            document.querySelector(".bookingform").style.display = "block";
+        }
+
+        function hideBooking(){
+            document.querySelector(".bookingform").style.display = "none";
         }
 
         function sendFeedBack(){

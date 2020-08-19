@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="loader">
+    <div class="loader">  <!--Loader page-->
         <div class="ring">
-
         </div>
     </div>
     <header>
@@ -151,29 +150,50 @@
 
         <div class="row">
             <div class="column">
-              <img src="./images/mermaid.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
-              <img src="./images/Luxury resort.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+              <img src="./images/mermaid.jpg" alt="Gallery" style="width:100%" onclick="myFunction(this);">
+              <img src="./images/Luxury resort.jpg" alt="Gallery" style="width:100%" onclick="myFunction(this);">
+              <img src="./images/gallery/gallery1.jpg" class="imgremove" alt="Gallery" style="width:100%" onclick="myFunction(this);">
+              <img src="./images/gallery/gallery2.jpg" class="imgremove" alt="Gallery" style="width:100%" onclick="myFunction(this);">
+              <img src="./images/gallery/gallery3.jpg" class="imgremove" alt="Gallery" style="width:100%" onclick="myFunction(this);">
+              <img src="./images/gallery/gallery4.jpg" class="imgremove" alt="Gallery" style="width:100%" onclick="myFunction(this);">
             </div>
             <div class="column">
-              <img src="./images/mermaid_1.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
-              <img src="./images/Floating.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+              <img src="./images/mermaid_1.jpg" alt="Gallery" style="width:100%" onclick="myFunction(this);">
+              <img src="./images/Floating.jpg" alt="Gallery" style="width:100%" onclick="myFunction(this);">
+              <img src="./images/gallery/gallery5.png" class="imgremove" alt="Gallery" style="width:100%" onclick="myFunction(this);">
+              <img src="./images/gallery/gallery6.jpg" class="imgremove" alt="Gallery" style="width:100%" onclick="myFunction(this);">
+              <img src="./images/gallery/gallery7.png" class="imgremove" alt="Gallery" style="width:100%" onclick="myFunction(this);">
+              <img src="./images/gallery/gallery8.jpg" class="imgremove" alt="Gallery" style="width:100%" onclick="myFunction(this);">
             </div>
             <div class="column">
-              <img src="./images/mermaid_3.jpeg" alt="Lights" style="width:100%" onclick="myFunction(this);">
-              <img src="./images/parking.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+              <img src="./images/mermaid_3.jpeg" alt="Gallery" style="width:100%" onclick="myFunction(this);">
+              <img src="./images/parking.jpg" alt="Gallery" style="width:100%" onclick="myFunction(this);">
+              <img src="./images/gallery/gallery9.jpg" class="imgremove" alt="Gallery" style="width:100%" onclick="myFunction(this);">
+              <img src="./images/gallery/gallery10.jpg" class="imgremove" alt="Gallery" style="width:100%" onclick="myFunction(this);">
+              <img src="./images/gallery/gallery11.jpg" class="imgremove" alt="Gallery" style="width:100%" onclick="myFunction(this);">
+              <img src="./images/gallery/gallery12.jpg" class="imgremove" alt="Gallery" style="width:100%" onclick="myFunction(this);">
             </div>
             <div class="column">
-             <img src="./images/mermaid_2.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
-             <img src="./images/cananas.jpeg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+             <img src="./images/mermaid_2.jpg" alt="Gallery" style="width:100%" onclick="myFunction(this);">
+             <img src="./images/cananas.jpeg" alt="Gallery" style="width:100%" onclick="myFunction(this);">
+             <img src="./images/gallery/gallery13.jpeg" class="imgremove" alt="Gallery" style="width:100%" onclick="myFunction(this);">
+             <img src="./images/gallery/gallery14.jpg" class="imgremove" alt="Gallery" style="width:100%" onclick="myFunction(this);">
+             <img src="./images/gallery/gallery15.jpg" class="imgremove" alt="Gallery" style="width:100%" onclick="myFunction(this);">
+             <img src="./images/gallery/gallery16.jpg" class="imgremove" alt="Gallery" style="width:100%" onclick="myFunction(this);">
             </div>
         </div>
-          
+        <div class="button">
+        <button id="gallerybtn" class="btn" onclick="showImg()">Show more</button>
+        </div>
         <div class="container" style="transition: 0.3s ease;">
             <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-            <img id="expandedImg">
+            <div id="divimg">
+                <img id="expandedImg">
+            </div>
             <div id="imgtext"></div>
         </div>
         <br><br><br><br>
+        
         <div class="heading">
             <h2>Guild Map</h2>
             <p>
@@ -184,7 +204,7 @@
             <div class="guild">
                 <img src="./images/guildmap.jpg" alt="guildmap">
             </div>
-            <div class="workBx">
+            <!-- <div class="workBx">
                 <img src="./images/product1.jpg" alt="image">
             </div>
             <div class="workBx">
@@ -195,10 +215,60 @@
             </div>
             <div class="workBx">
                 <img src="./images/product4.jpg" alt="image">
+            </div> -->
+        </div>
+    </section>
+    <section class="join">
+        <div class="heading white">
+            <h2>Join With Us</h2>
+        </div>
+        <div class="content">
+            <div class="arrow bounce"></div>
+            <div class="booking">
+                <button onclick="showBooking()" class="btn">Booking</button>
+            </div>
+            <div class="bookingform">
+                <span class="closebtn" onclick="hideBooking()" >x</span>
+                <div class="container">
+                    <div class="w50 br">
+                        <div class="datebooking">
+                            <h3>Date</h3>
+                            <input type="date" name="date" id="">
+                        </div>
+                        <div class="numberbooking">
+                            <h3>Adult</h3>
+                            <input type="number" name="" id="">
+                            <h3>Children</h3>
+                            <input type="number" name="" id="">
+                        </div>
+                        <div class="pricebooking">
+
+                        </div>
+                    </div>
+                    <div class="w50 br5 ">
+                        <form action="">
+                            <h3>Booking form</h3>
+                            <div class="input-group">
+                                <input type="text" id="fullname" required>
+                                <label for="fullname">Full name</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="email" id="email" required>
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="text" id="phone" required>
+                                <label for="phone">Phone(+84)</label>
+                            </div>
+                            <div class="buttonbooking">
+                                <button type="submit">Submit</button>
+                            </div>
+                        </form>
+                   </div>
+                </div>
             </div>
         </div>
     </section>
-        
     <section class="testimonial" id="location">
         <div class="heading">
             <h2>Location</h2>
@@ -244,6 +314,42 @@
             <p>T1.2005.E3 Students</p>
         </div>
         <div class="contentBx">
+            <div class="container">
+                <div class="image">
+                    <img src="./images/avatar.khoa.jpg" alt="avata2">
+                </div>
+                <div class="content">
+                    <div class="info">
+                        <h2>Khoa</h2>
+                        <span>MERN Stack Developer</span>
+                    </div>
+                </div>
+                <ul>
+                    <li><a href="#"><span><i class="fab fa-facebook-f"></i></span></a></li>
+                    <li><a href="#"><span><i class="fab fa-twitter"></i></span></a></li>
+                    <li><a href="#"><span><i class="fab fa-instagram"></i></span></a></li>
+                    <li><a href="#"><span><i class="fab fa-github"></i></span></a></li>
+                    <li><a href="#"><span><i class="fab fa-youtube"></i></span></a></li>
+                </ul>
+            </div>
+            <div class="container">
+                <div class="image">
+                    <img src="./images/avatar.khoa.jpg" alt="avata2">
+                </div>
+                <div class="content">
+                    <div class="info">
+                        <h2>Khoa</h2>
+                        <span>MERN Stack Developer</span>
+                    </div>
+                </div>
+                <ul>
+                    <li><a href="#"><span><i class="fab fa-facebook-f"></i></span></a></li>
+                    <li><a href="#"><span><i class="fab fa-twitter"></i></span></a></li>
+                    <li><a href="#"><span><i class="fab fa-instagram"></i></span></a></li>
+                    <li><a href="#"><span><i class="fab fa-github"></i></span></a></li>
+                    <li><a href="#"><span><i class="fab fa-youtube"></i></span></a></li>
+                </ul>
+            </div>
             <div class="container">
                 <div class="image">
                     <img src="./images/avatar.khoa.jpg" alt="avata2">
