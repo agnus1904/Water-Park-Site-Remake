@@ -448,6 +448,8 @@ img{
     background-color: rgb(255, 255, 255);
     padding: 30px;
     border-radius: 10px;
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
 .join .content .bookingform .container .br{
@@ -1050,7 +1052,7 @@ iframe{
     }
 
     .join .content .bookingform{
-        padding: 100px 80px;
+        padding: 100px 50px;
     }
 
     .join .content .bookingform .container{
@@ -1059,5 +1061,44 @@ iframe{
     .join .content .bookingform .container input[type=number]{
         margin: 0;
     }
+    .aboutus .container {
+        position: relative;
+        height: 350px;
+        width: 280px;
+    }
+    .aboutus .container ul li a{
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        font-size: 15px;
+    }
+}
 
+@media (max-width:400px){
+    header{
+        padding: 20px 25px;
+    }
+    header.sticky{
+        padding: 15px 25px;
+    }
+    .menu{
+        padding: 50px 20px;
+    }
+    .banner{
+        padding: 60px 25px;
+    }
+    .join .content .bookingform .container .br {
+        padding: 0px 0px;
+    }
+    .join .content .bookingform {
+        padding: 60px 20px;
+    }
+    .closebtn{
+        top:15px;
+        right: 25px;
+        font-size: 40px;
+    }
+    iframe{
+        height: 250px;
+    }
 }
