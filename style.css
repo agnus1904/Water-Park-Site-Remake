@@ -67,6 +67,16 @@ section{
     object-fit: cover;
 }
 
+.banner .overplay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: background-image: linear-gradient(to right top, #040608, #10283b, #0e4872, #1768ad, #3889eb);
+    mix-blend-mode: overlay;
+}
+
 .banner .textBx{
     z-index: 10;
 }
