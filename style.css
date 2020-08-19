@@ -194,10 +194,9 @@ header.sticky ul li a{
     display: flex;
     justify-content: space-between;
 }
-.contentBx{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+
+.about .content .contentBx{
+    margin-right: 10px;
 }
 
 .contentBx h3{
@@ -702,6 +701,12 @@ img{
     box-shadow: 0 1px 5px rgba(0,0,0,0.3);
     transition: 0.3s ease-out;
     margin: 5px;
+}
+
+.aboutus .contentBx{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .aboutus .container:hover{
