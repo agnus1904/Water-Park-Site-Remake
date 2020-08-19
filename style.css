@@ -50,6 +50,10 @@ section{
     padding: 60px;
 }
 
+.heading h2{
+    margin: 15px 0;
+}
+
 .banner{
     position: relative;
     min-height: 100vh;
@@ -431,7 +435,7 @@ img{
     position: fixed;
     z-index: 1004;
     padding: 200px 150px;
-    background: rgba(1,1,1,0.6);
+    background: rgba(1,1,1,0.9);
 }
 
 .bookingform{
@@ -442,48 +446,57 @@ img{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     padding: 30px;
     border-radius: 10px;
+}
+
+.join .content .bookingform .container .br{
+    padding: 0 20px;
 }
 
 .join .content .bookingform .container .br5{
     width: 50%;
 }
 
+
+
 .join .content .bookingform .container input[type=date]{
     border-radius: 10px;
-    padding: 5px 5px;
+    padding: 5px 15px;
     border: none;
-    background: #ddd;
+    background: rgb(238, 238, 238);
     outline: none;
     cursor: pointer;
 }
 
 .join .content .bookingform .container input[type=number]{
-    width: 40px;
-    height: 25px;
+    width: 50px;
+    height: 30px;
     border-radius: 5px;
     outline: none;
     margin: 0 20px;
-    padding: 5px;
+    border: none;
+    padding: 10px;
+    background: rgb(238, 238, 238);
 }
 
 .join .content .bookingform .container .datebooking h3,
 .join .content .bookingform .container .numberbooking h3{
     padding: 5px;
+    font-weight: 500;
 }
 
 .join .content .bookingform .container .datebooking,
 .join .content .bookingform .container .numberbooking{
     display: flex;
     margin: 20px 0;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .join .content .bookingform .container form{
     border: 1px solid rgb(131, 129, 129);
-    padding: 5px;
+    padding: 15px;
 }
 
 .bookingform .container form .input-group{
@@ -493,7 +506,6 @@ img{
 
 .bookingform .container form{
     color: rgb(104, 103, 103);
-    padding: 1rem 1.2rem;
     box-shadow: .4px 4px 12px rgba(0, 0, 0, .2);
     margin-top: 10px;
     border-radius: 10px;

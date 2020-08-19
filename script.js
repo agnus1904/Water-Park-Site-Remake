@@ -57,6 +57,15 @@ const loader = document.querySelector(".loader");
             document.querySelector(".bookingform").style.display = "none";
         }
 
+        let today = new Date().toISOString().substr(0, 10);
+        document.querySelector("#today").value = today;
+        document.querySelector("#today").min = today;
+
+        function booking(){
+            location.reload();
+            alert("We have received your order. Please wait for our contact")
+        }
+
         function sendFeedBack(){
             location.reload();
             alert("We have received your Feedback");

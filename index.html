@@ -234,20 +234,20 @@
                     <div class="w50 br">
                         <div class="datebooking">
                             <h3>Date</h3>
-                            <input type="date" name="date" id="">
+                            <input type="date" id="today" name="date" min="">
                         </div>
                         <div class="numberbooking">
                             <h3>Adult</h3>
-                            <input type="number" name="" id="">
+                            <input type="number" min="1" max="10" value="1">
                             <h3>Children</h3>
-                            <input type="number" name="" id="">
+                            <input type="number" min="0" value="0">
                         </div>
                         <div class="pricebooking">
 
                         </div>
                     </div>
                     <div class="w50 br5 ">
-                        <form action="">
+                        <form action="" onsubmit="booking()">
                             <h3>Booking form</h3>
                             <div class="input-group">
                                 <input type="text" id="fullname" required>
@@ -388,9 +388,9 @@
                         </div>
                         <div class="text">
                             <h3>Address</h3>
-                            <p>590 CMTT </p>
+                            <p>590 Cach Mang Thang 8</p>
                             <p>District 3</p>
-                            <p>HCM City</p>
+                            <p>Ho Chi Minh City</p>
                         </div>
                     </div>
                     <div class="box">
@@ -416,7 +416,7 @@
             <div class="formBx">
                 <form action="" onsubmit="sendFeedBack()">
                     <h3>Feedback</h3>
-                    <input type="text" placeholder="Full name" required>
+                    <input type="text" placeholder="Full name" style="margin-top: 20px;" required>
                     <input type="email" placeholder="Email" required>
                     <textarea name="" id="" placeholder="Your Massage" required></textarea>
                     <button type="submit">Send</button>
