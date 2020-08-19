@@ -434,7 +434,7 @@ img{
     position: fixed;
     z-index: 1004;
     padding: 200px 150px;
-    background: rgba(1,1,1,0.9);
+    background: rgba(1,1,1,0.6);
 }
 
 .bookingform{
@@ -476,7 +476,6 @@ img{
     height: 30px;
     border-radius: 5px;
     outline: none;
-    margin: 0 20px;
     border: none;
     padding: 10px;
     background: rgb(238, 238, 238);
@@ -496,7 +495,7 @@ img{
 }
 
 .join .content .bookingform .container form{
-    border: 1px solid rgb(131, 129, 129);
+    box-shadow: 0px 5px 10px #555;
     padding: 15px;
 }
 
@@ -570,7 +569,7 @@ img{
 .join .content .booking .btn{
     margin-top: 5px;
     padding: 15px 40px;
-    background-color: rgb(79, 104, 247);
+    background-color: rgb(79 169 247);
     border-radius: 10px;
     border: none;
     color: white;
@@ -692,6 +691,9 @@ img{
     cursor: pointer;
     text-transform: uppercase;
     letter-spacing: 2px;
+    color: white;
+    outline: none;
+    border-radius: 8px;
 }
 
 .aboutus .container{
