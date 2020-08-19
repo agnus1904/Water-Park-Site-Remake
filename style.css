@@ -1046,6 +1046,13 @@ iframe{
     iframe{
         height: 300px;
     }
+    .column{
+        padding: 3px;
+    }
+
+    .column img{
+        margin: 3px 0;
+    }
 
     .work .container{
         padding: 200px 10px;
@@ -1087,11 +1094,23 @@ iframe{
     .banner{
         padding: 60px 25px;
     }
+    .column{
+        padding: 2px;
+    }
+
+    .column img{
+        margin: 2px 0;
+    }
+
     .join .content .bookingform .container .br {
         padding: 0px 0px;
     }
     .join .content .bookingform {
         padding: 60px 20px;
+    }
+    .join .heading h2{
+        font-size: 290%;
+        font-weight: 500;
     }
     .closebtn{
         top:15px;
