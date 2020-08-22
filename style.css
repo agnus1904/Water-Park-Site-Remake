@@ -77,8 +77,6 @@ section{
     left: 0;
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(to right top, #162029, #1f4768, #0e4872, #1768ad, #3889eb);
-    mix-blend-mode: overlay;
 }
 
 .banner .textBx{

@@ -13,6 +13,8 @@ const loader = document.querySelector(".loader");
             var header = document.querySelector("header");
             header.classList.toggle("sticky",window.scrollY > 0);
         })
+
+        
         function toggleMenu(){
             var menuToggle = document.querySelector(".toggle");
             var menu = document.querySelector(".menu");
