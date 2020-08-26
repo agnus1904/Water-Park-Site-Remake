@@ -238,6 +238,7 @@ img{
     margin: 20px;
     text-align: center;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .services .content .servicesBx:hover{
@@ -252,6 +253,35 @@ img{
 .services .content .servicesBx h2{
     font-size: 20px;
     font-weight: 600;
+}
+
+.services .contentBxs{
+    margin-top: 100px;
+    color: white;
+}
+
+.services .contentBxs .contentBx{
+    display: flex;
+    margin: 50px 0 50px 0;
+}
+
+.w100{
+    width: 100%;
+}
+
+.services .contentBxs .contentBx video{
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+}
+.services .contentBxs .contentBx img{
+    border-radius: 10px;
+    width: 100%;
+}
+
+.services .contentBxs .contentBx .bxContent{
+    padding: 20px;
+    word-spacing: 5px;
 }
 
 .work .content{
@@ -281,9 +311,9 @@ img{
 .column img {
     opacity: 0.8; 
     cursor: pointer; 
-    border-radius: 10px;
+    border-radius: 3px;
     height: 100%;
-    margin: 10px 0;
+    margin: 5px 0;
 }
   
 .column img:hover {
@@ -458,7 +488,9 @@ img{
     width: 50%;
 }
 
-
+.join .content .bookingform .container .pricebooking{
+    text-align: center;
+}
 
 .join .content .bookingform .container input[type=date]{
     border-radius: 10px;
@@ -760,7 +792,7 @@ img{
 
 .aboutus .content .info{
     position: absolute;
-    bottom: 20px;
+    bottom: 15px;
     text-align: center;
     width: 100%;
     line-height: 26px;
@@ -998,6 +1030,19 @@ iframe{
         padding: 30px 10px;
         margin: 10px;
     }
+
+    .services .contentBxs .contentBx{
+        flex-direction: column;
+    }
+
+    .services .contentBxs .contentBx.rever{
+        flex-direction: column-reverse;
+    }    
+
+    .services .contentBxs .contentBx .bxContent {
+        padding: 0px;
+    }
+
     .work .content .workBx {
         width: 100%;
         padding: 0px;
@@ -1029,7 +1074,7 @@ iframe{
         border-radius: 10px;
     }
     .join .content .bookingform{
-        padding: 200px 100px;
+        padding: 90px 100px;
     }
     .join .content .bookingform .container{
         padding: 3px;
@@ -1094,6 +1139,9 @@ iframe{
     .banner{
         padding: 60px 25px;
     }
+    .services .contentBxs .contentBx .bxContent {
+        font-size: 14px;
+    }
     .column{
         padding: 2px;
     }
@@ -1106,16 +1154,40 @@ iframe{
         padding: 0px 0px;
     }
     .join .content .bookingform {
-        padding: 60px 20px;
+        padding: 45px 15px;
+    }
+    .join .content .bookingform .closebtn {
+        top: 5px;
+        right: 15px;
+        font-size: 35px;
+    }
+    .w50{
+        margin-bottom: 10px;
+    }
+    .join .content .bookingform .container .datebooking, 
+    .join .content .bookingform .container .numberbooking {
+        margin: 10px 0;
     }
     .join .heading h2{
         font-size: 290%;
         font-weight: 500;
     }
+    .bookingform .container form .input-group{
+        margin: 1rem 0;
+    }
     .closebtn{
         top:15px;
         right: 25px;
         font-size: 40px;
+    }
+    .aboutus .container:hover .image{
+        transform: translateY(-70px);
+    }
+
+    .aboutus .content .info {
+        bottom: 5px;
+        line-height: 20px;
+        font-size: 90%;
     }
     iframe{
         height: 250px;
