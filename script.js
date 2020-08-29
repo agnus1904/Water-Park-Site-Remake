@@ -26,13 +26,46 @@ const loader = document.querySelector(".loader");
             }
         }
 
+        function showVideo(link){
+            document.getElementById("videoRide").src= link;
+            document.querySelector(".videoride").style.transform = "scale(1)";
+        }
+
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        }
+
         function myFunction(imgs) {
             var divExpandImg = document.getElementById("divimg");
             var expandImg = document.getElementById("expandedImg");
             var imgText = document.getElementById("imgtext");
             expandImg.src = imgs.src;
             imgText.innerHTML = imgs.alt;
-            divExpandImg.parentElement.style.display = "block";
+            divExpandImg.parentElement.style.transform = "scale(1)";
         }
 
         function showImg(){
@@ -52,11 +85,12 @@ const loader = document.querySelector(".loader");
         }
 
         function showBooking(){
-            document.querySelector(".bookingform").style.display = "block";
+            document.querySelector(".bookingform").style.transform = "scale(1)";
         }
 
         function hideBooking(){
-            document.querySelector(".bookingform").style.display = "none";
+            document.querySelector(".bookingform").style.transform = "scale(0)";
+            
         }
 
         let today = new Date().toISOString().substr(0, 10);

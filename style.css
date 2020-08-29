@@ -79,6 +79,12 @@ section{
     width: 100%;
 }
 
+.banner .textBx .opentime{
+    font-size: 230%;
+    text-align: center;
+    margin: 15px;
+}
+
 .banner .textBx{
     z-index: 10;
 }
@@ -265,6 +271,85 @@ img{
     margin: 50px 0 50px 0;
 }
 
+.services .contentBxs .contentBxride{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.services .contentBxs .contentBxride .ride{
+    width: 450px;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #222;
+    padding: 25px 20px 15px 20px;
+    margin: 20px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.services .contentBxs .contentBxride .ride:hover{
+    background: #2196f3;
+    transition: all 0.5s;
+}
+
+.services .contentBxs .contentBxride .videoride{
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1003;
+    padding: 50px;
+    transform: scale(0);
+    transition: all 0.5s;
+}
+.services .contentBxs .contentBxride .videoride .video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.services .contentBxs .contentBxride .videoride .video video{
+    width: 800px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.services .contentBxs .contentBxride .videoride span{
+    position: fixed;
+    top: 30px;
+    right: 50px;
+    font-size: 300%;
+}
+
+
+
+.services .contentBxs .contentBxride .ride span{
+    flex-grow: 1;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.services .contentBxs .contentBxride .ride img{
+    border-radius: 5px;
+    height: 230px;
+}
+
+.services .contentBxs .contentBxfaci{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 .w100{
     width: 100%;
 }
@@ -278,11 +363,200 @@ img{
     border-radius: 10px;
     width: 100%;
 }
+.services .contentBxs .contentBx .bxVideo{
+    min-width: 70%;
+}
 
 .services .contentBxs .contentBx .bxContent{
     padding: 20px;
     word-spacing: 5px;
+    min-width: 30%;
 }
+
+
+.services .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    margin-top: 25px;
+  }
+
+.services .slideshow-container img{
+    border-radius: 20px;
+}
+  
+  /* Next & previous buttons */
+.services .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+.services .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .services .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .services .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .services .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .services .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .services .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .services .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+
+
+
+
+.services .contentBxs .contentBxfood{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+
+
+.services .contentBxs .contentBxfood .food{
+    height: 350px;
+    background: blue;
+    width: 48%;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.services .contentBxs .contentBxfood .foodcontainer{
+    display: flex;
+    flex-direction: row;
+    width: 1300px;
+    margin: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.services .contentBxs .contentBxfood .food.hungry{
+    width: 1300px;
+    height: 450px;
+    background-image: url(./images/The\ Hungry\ Shack.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 20px 10px;
+}
+
+.services .contentBxs .contentBxfood .food.hungry .boxfood{
+    height: 380px;
+    width: 480px;
+    float: right;
+    margin: 30px;
+    background: #333;
+    color: #eee;
+    border-radius: 5px;
+    padding: 35px;
+}
+
+.services .contentBxs .contentBxfood .foodcontainer .food.food1{
+    background-image: url(./images/Burger\ Barn.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.services .contentBxs .contentBxfood .foodcontainer .food.food2{
+    background-image: url(./images/snackstop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.services .contentBxs .contentBxfood .foodcontainer .food.food3{
+    background-image: url(./images/Ice\ Cream.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.services .contentBxs .contentBxfood .foodcontainer .food.food4{
+    background-image: url(./images/Frozen\ Zone.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.services .contentBxs .contentBxfood .foodcontainer .food .boxfood{
+    width: 230px;
+    height: 300px;
+    background: #333;
+    border-radius: 5px;
+    float: right;
+    color: #eee;
+    margin: 25px 30px;
+    padding: 20px;
+}
+
+
 
 .work .content{
     display: flex;
@@ -322,31 +596,34 @@ img{
 
 .work .container {
     position: fixed;
-    display: none;
+    transform: scale(0);
     z-index: 1006;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-    padding: 80px;
+    padding: 60px;
     background: rgba(6,6,6,0.8);
 }
 
 .work .container #divimg{
     width: 100%;
     height: 100%;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .work .container #divimg img{
     border-radius: 20px;
-    width: 100%;
-    max-height: 80vh;
+    min-width: 60%;
+    max-height: 90vh;
 }
 
 
 .work .row .column .imgremove{
     display: none;
+
 }
 
 .work .button{
@@ -466,7 +743,10 @@ img{
 }
 
 .bookingform{
-    display: none;
+    transition: all 0.5s;
+    /* display: none; */
+    transform: scale(0);
+    
 }
 
 .join .content .bookingform .container{
@@ -1043,6 +1323,27 @@ iframe{
         padding: 0px;
     }
 
+    .services .contentBxs .contentBxfood .food.hungry{
+        height: 350px;
+    }
+
+    .services .contentBxs .contentBxfood .food.hungry .boxfood{
+        height: 300px;
+        width: 230px;
+        float: right;
+        margin: 25px 30px;
+        background: #333;
+        color: #eee;
+        border-radius: 5px;
+        padding: 20px;
+    }
+    .services .contentBxs .contentBxfood .food{
+        width: 100%;
+    }
+
+    
+
+    
     .work .content .workBx {
         width: 100%;
         padding: 0px;
@@ -1098,6 +1399,10 @@ iframe{
     .column img{
         margin: 3px 0;
     }
+    .services .contentBxs .contentBxride{
+        justify-content: center;
+    }
+
 
     .work .container{
         padding: 200px 10px;
@@ -1142,6 +1447,7 @@ iframe{
     .services .contentBxs .contentBx .bxContent {
         font-size: 14px;
     }
+
     .column{
         padding: 2px;
     }

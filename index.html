@@ -34,6 +34,7 @@
             <h3>
                 Great place to have fun with your family
             </h3>
+            <h3 class="opentime" >Open Daily: 10:00 am - 7:00 pm</h3>
             <a href="#about" class="btn">
                 Information
             </a>
@@ -65,7 +66,7 @@
                     hot dancers!!
                 </p>
                 <h3>
-                    Open time
+                    Vestival party
                 </h3>
                 <p>
                     WET ELECTRIC MUSIC FESTIVAL  have the entire waterpark 
@@ -98,7 +99,7 @@
             </div>
             <div class="servicesBx" onclick="location.href='#adventure'">
                 <i class="fas fa-gamepad"></i>
-                <h2>Adventure Game Zone</h2>
+                <h2>Facility</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur, 
                     adipisicing elit. Quidem pariatur placeat amet 
@@ -138,69 +139,170 @@
             </div>
         </div>
         <div class="contentBxs">
+
+
+
             <div class="heading white" id="ride">
                 <h2>Ride And Slide</h2>
             </div>
-            <div class="contentBx">
-                <div class="bxContent w50">
-                    <span>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Facilis dolore similique debitis ab, perferendis eum sunt dolor 
-                        reiciendis cumque eveniet itaque nobis, officia mollitia, culpa ea 
-                        cupiditate vitae obcaecati ipsa.
-                        <br>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Facilis dolore similique debitis ab, perferendis eum sunt dolor 
-                        reiciendis cumque eveniet itaque nobis, officia mollitia, culpa ea 
-                        cupiditate vitae obcaecati ipsa.
+            <div class="contentBxride">
+                
+                <div class="ride" onclick="showVideo('./videos/Abyss.mp4')">
+                    <h3>ABYSS</h3>
+                    <span>The Abyss water slide is the largest 
+                        funnel slide in the industry, creating an 
+                        iconic centerpiece in any water park.
                     </span>
+                    <img src="./images/abyss.jpg" alt="abyss">
                 </div>
-                <div class="bxVideo w50">
-                    <video src="./videos/FlowRider.mp4" controls></video>
-                </div>
-            </div>
-            <div class="heading white" id="adventure">
-                <h2>Adventure Game Zone</h2>
-            </div>
-            <div class="contentBx rever">
-                <div class="bxVideo w50">
-                    <video src="./videos/Abyss.mp4" controls></video>
-                </div>
-                <div class="bxContent w50">
+                <div class="ride" onclick="showVideo('./videos/Manta.mp4')">
+                    <h3>MANTA</h3>
                     <span>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Facilis dolore similique debitis ab, perferendis eum sunt dolor 
-                        reiciendis cumque eveniet itaque nobis, officia mollitia, culpa ea 
-                        cupiditate vitae obcaecati ipsa.
-                        <br>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Facilis dolore similique debitis ab, perferendis eum sunt dolor 
-                        reiciendis cumque eveniet itaque nobis, officia mollitia, culpa ea 
-                        cupiditate vitae obcaecati ipsa.
+                        AN IMPRESSIVE CENTERPIECE TO ANY WATER PARK, 
+                        WITHOUT THE ASSOCIATED PRICE TAG.
                     </span>
+                    <img src="./images/manta.jpg" alt="manta">
+                </div>
+                <div class="ride" onclick="showVideo('./videos/Speed Slide.mp4')">
+                    <h3>SPEED SLIDE</h3>
+                    <span>
+                        A high thrill attraction with a spine-tingling 
+                        combination of extreme speeds and feelings of 
+                        weightlessness
+                    </span>
+                    <img src="./images/Speed-Slide.jpg" alt="speed-slide">
+                </div>
+                <div class="ride" onclick="showVideo('./videos/Whizzard.mp4')">
+                    <h3>WHIZZARD WATER SLIDE</h3>
+                    <span>
+                        Adding another dimension to head-to-head mat racing
+                    </span>
+                    <img src="./images/whizzard.jpg" alt="whizzard">
+                </div>
+                <div class="videoride">
+                    <span onclick="document.querySelector('.videoride').style.transform = 'scale(0)'">x</span>
+                    <div class="video">
+                        <video src="" id="videoRide" controls></video>
+                    </div>
                 </div>
             </div>
+            <br>
+            <div class="heading white" id="adventure" style="width: 70%;margin: auto;">
+                <h2>Facility</h2>
+                <span>
+                    Covering an area of 150,000 square-meters, 
+                    the giant-scale waterpark is equipped with world-class water 
+                    amusement facilities. 
+                    Varies of water sports and games are also available.
+                </span>
+            </div>
+            <div class="contentBxfaci">
+                
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 3</div>
+                      <img src="images/Facilities_1.jpeg" style="width:100%">
+                      <div class="text">Caption Text</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 3</div>
+                      <img src="images/parking2.jpeg" style="width:100%">
+                      <div class="text">Caption Two</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 3</div>
+                      <img src="images/Foodcourd.jpeg" style="width:100%">
+                      <div class="text">Caption Three</div>
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    
+                    </div>
+                    <br>
+                    
+                    <div style="text-align:center">
+                      <span class="dot" onclick="currentSlide(1)"></span> 
+                      <span class="dot" onclick="currentSlide(2)"></span> 
+                      <span class="dot" onclick="currentSlide(3)"></span> 
+                    </div>
+            </div>
+            <br>
+            <br>
             <div class="heading white" id="food">
                 <h2>Food Zone</h2>
             </div>
-            <div class="contentBx">
-                <div class="bxContent w50">
-                    <span>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Facilis dolore similique debitis ab, perferendis eum sunt dolor 
-                        reiciendis cumque eveniet itaque nobis, officia mollitia, culpa ea 
-                        cupiditate vitae obcaecati ipsa.
+            <div class="contentBxfood">
+                <div class="food hungry">
+                    <div class="boxfood">
+                        <h1>The Hungry Shack</h1>
                         <br>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Facilis dolore similique debitis ab, perferendis eum sunt dolor 
-                        reiciendis cumque eveniet itaque nobis, officia mollitia, culpa ea 
-                        cupiditate vitae obcaecati ipsa.
-                    </span>
+                        <br>
+                        <span>
+                            A great selection of your favourites including;
+                            hot dogs, warm wraps, loaded chips & dagwood dogs, 
+                            there's plenty to satisfy your hunger. Cool down with a 
+                            selection of cold & frozen drinks.
+                        </span>
+                    </div>
                 </div>
-                <div class="bxVideo w50">
-                    <img src="./images/Sharky's Kitchen.jpg" alt="food">
+                <div class="foodcontainer">
+                    <div class="food food1">
+                        <div class="boxfood">
+                            <h1>Burger Barn</h1>
+                            <br>
+                            <br>
+                            <span>Head to the Burger Barn & choose from a 
+                                selection of mouth-watering beef, chicken or 
+                                vegetarian burgers. Guaranteed to keep your tummy 
+                                satisfied.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="food food2">
+                        <div class="boxfood">
+                            <h1>Snack Stop</h1>
+                            <br>
+                            <br>
+                            <span>
+                                Grab some chips, confectionery or cool 
+                                off with a selection of cold drinks and Streets 
+                                ice creams.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="food food3">
+                        <div class="boxfood">
+                            <h1>Ice Cream Parlour</h1>
+                            <br>
+                            <br>
+                            <span>Cool off & enjoy our selection of 
+                                creamy Streets Ice Cream varieties. Try one of 
+                                our new loaded ice cream selections.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="food food4">
+                        <div class="boxfood">
+                            <h1>Frozen Zone</h1>
+                            <br>
+                            <br>
+                            <span>
+                                The ultimate place to cool off with a 
+                                variety of frozen flavoured drinks & shaved 
+                                ice snow cones.
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+
+
+
             <div class="heading white" id="rest">
                 <h2>Rest Zone</h2>
             </div>
@@ -208,36 +310,34 @@
                 <div class="bxVideo w50">
                     <img src="./images/Queen.jpg" alt="rest">
                 </div>
-                <div class="bxContent w50">
-                    <span>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Facilis dolore similique debitis ab, perferendis eum sunt dolor 
-                        reiciendis cumque eveniet itaque nobis, officia mollitia, culpa ea 
-                        cupiditate vitae obcaecati ipsa.
-                        <br>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Facilis dolore similique debitis ab, perferendis eum sunt dolor 
-                        reiciendis cumque eveniet itaque nobis, officia mollitia, culpa ea 
-                        cupiditate vitae obcaecati ipsa.
-                    </span>
+                <div class="bxContent">
+                    <h3>ROOMS & SUITES</h3>
+                    A space to unwind
+                    Our rooms & suites are decorated in a fusion of 
+                    traditional and contemporary styles, and feature 
+                    stunning city views, working areas, mini bars & international 
+                    furnishings. Each of our 204 rooms include WiFi, flat screen 
+                    TVs and modern amenities.
                 </div>
             </div>
             <div class="heading white" id="aquarium">
                 <h2>Aquarium</h2>
             </div>
             <div class="contentBx">
-                <div class="bxContent w50">
-                    <span>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Facilis dolore similique debitis ab, perferendis eum sunt dolor 
-                        reiciendis cumque eveniet itaque nobis, officia mollitia, culpa ea 
-                        cupiditate vitae obcaecati ipsa.
-                        <br>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Facilis dolore similique debitis ab, perferendis eum sunt dolor 
-                        reiciendis cumque eveniet itaque nobis, officia mollitia, culpa ea 
-                        cupiditate vitae obcaecati ipsa.
-                    </span>
+                <div class="bxContent">
+                    <h3>The Mysteries of Sanjalika Revealed</h3>
+
+                    The aquarium introduces you to the mystery of Sanjalika’s 
+                    marine creatures, starting with the naturally lit Coral 
+                    Sea tank, which exhibits a large selection of coral reef. 
+                    Next is the enormous, dynamic Sea tank, where you can observe 
+                    the world’s biggest fish as well as whale sharks and manta rays, 
+                    which, in a world first, the aquarium has succeeded in breeding. 
+                    And as you go deeper into the aquarium, you will encounter the
+                     Deep Sea tank, in which the which the mysterious deep sea of 
+                     Sanjalika is reproduced, allowing you to experience Sanjalika’s 
+                     entire underwater world.
+
                 </div>
                 <div class="bxVideo w50">
                     <img src="./images/aquarium-coral-fish.jpg" alt="aquarium">
@@ -246,22 +346,28 @@
             <div class="heading white" id="kid">
                 <h2>Kid Zone</h2>
             </div>
-            <div class="contentBx">
-                <div class="bxVideo w50 rever">
-                    <img src="./images/aquaspray_2.jpg" alt="kid">
+            <div class="contentBx rever">
+                <div class="bxVideo">
+                    <video src="./videos/AquaCourse.mp4" controls></video>
                 </div>
-                <div class="bxContent w50">
-                    <span>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Facilis dolore similique debitis ab, perferendis eum sunt dolor 
-                        reiciendis cumque eveniet itaque nobis, officia mollitia, culpa ea 
-                        cupiditate vitae obcaecati ipsa.
-                        <br>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Facilis dolore similique debitis ab, perferendis eum sunt dolor 
-                        reiciendis cumque eveniet itaque nobis, officia mollitia, culpa ea 
-                        cupiditate vitae obcaecati ipsa.
-                    </span>
+                <div class="bxContent">
+                    <h3>PLAY</h3>
+                    Attractions designed so guests play, and therefore stay, longer.
+
+
+                    <h3>AQUACOURSE</h3>
+                    An interactive aquatic play ropes course to diversify your water play mix
+
+                    AquaCourse is a harnessed multi-level play experience that challenges 
+                    guests to traverse between towers, across a series of tricky and 
+                    demanding bridges – all while safely harnessed in. Along the way, 
+                    they’ll encounter rope pull showers, surprise geysers, and interactive 
+                    water jets to keep them on their toes.
+                    AquaCourse offers different models and sizes with the opportunity for 
+                    customization to fit your budget and site requirements. Incorporating 
+                    lower tracks for smaller kids, making them feel safer, and higher tracks
+                     for teens and adults who crave bigger thrills.
+
                 </div>
             </div>
         </div>
@@ -313,10 +419,10 @@
         <div class="button">
         <button id="gallerybtn" class="btn" onclick="showImg()">Show more</button>
         </div>
-        <div class="container" style="transition: 0.3s ease;">
-            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <div class="container" style="transition: 0.5s ease;">
+            <span onclick="this.parentElement.style.transform='scale(0)'" class="closebtn">&times;</span>
             <div id="divimg">
-                <img id="expandedImg">
+                <img id="expandedImg" src="./images/aquaspray_2.jpg">
             </div>
             <div id="imgtext"></div>
         </div>
@@ -358,7 +464,7 @@
                             <input type="number" min="0" value="0">
                         </div>
                         <div class="pricebooking">
-                            <h3>From monday to friday</h3>
+                            <h3>Monday to Friday</h3>
                             <br>
                             <span>Adult: 5$ &nbsp; &nbsp; &nbsp; &nbsp; Children: 3$</span>
                             <br>
